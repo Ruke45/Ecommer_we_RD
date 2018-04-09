@@ -1,0 +1,5 @@
+D:\Ecom_Web_RD\Ecom_Web_RD\bin\Ecom_Web_RD.dll
+D:\Ecom_Web_RD\Ecom_Web_RD\bin\Ecom_Web_RD.pdb
+D:\Ecom_Web_RD\Ecom_Web_RD\obj\Debug\Ecom_Web_RD.csprojResolveAssemblyReference.cache
+D:\Ecom_Web_RD\Ecom_Web_RD\obj\Debug\Ecom_Web_RD.dll
+D:\Ecom_Web_RD\Ecom_Web_RD\obj\Debug\Ecom_Web_RD.pdb

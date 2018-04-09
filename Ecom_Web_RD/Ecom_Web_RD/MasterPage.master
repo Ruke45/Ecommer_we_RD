@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 200px;
+            height: 65px;
+        }
+        .auto-style2 {
+            width: 900px;
+            height: 65px;
+        }
+        .auto-style3 {
+            height: 40px;
+        }
+        .auto-style4 {
+            width: 122px;
+            height: 77px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <table style="width:1100px;margin:auto" >
+       <tr style="width:1100px;text-align:right  " >
+           
+           <td class="auto-style1" style="text-align:center">
+               <img alt="" class="auto-style4" src="Images/Logo.jpg" /></td>
+           <td class="auto-style2">
+               <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Underline="True" ForeColor="Black" NavigateUrl="~/Register.aspx" style="font-size: large">Register</asp:HyperLink>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:HyperLink ID="HyperLink2" runat="server" BackColor="White" Font-Bold="True" Font-Underline="True" ForeColor="Black" NavigateUrl="~/Login.aspx" style="font-size: large; text-align: left">Login</asp:HyperLink>
+           </td>
+       </tr>
+       <tr style="width:1100px;background-color:#714302 ">
+           <td colspan="3" class="auto-style3">
+               <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" style="text-align: center">
+                   <Items>
+                       <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="About us" Value="About us" NavigateUrl="~/About us.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="Products" Value="Products" NavigateUrl="~/Products.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="Contact us" Value="Contact us" NavigateUrl="~/Contact us.aspx"></asp:MenuItem>
+                   </Items>
+                   <StaticHoverStyle BackColor="#392201" ForeColor="White" />
+                   <StaticMenuItemStyle Font-Size="Large" ForeColor="Black" HorizontalPadding="80px" Height="40px" />
+               </asp:Menu>
+           </td>
+ 
+        </tr>
+       <tr style="width:1100px">
+           <td colspan="3">
+
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+               </asp:ContentPlaceHolder>
+           </td>
+ 
+        </tr>
+       <tr style="width:1100px;height:40px;background-color:#714302;text-align:right;color:#000000">
+           <td colspan="3">
+             
+               Copyright 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+               <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/facebook.png" />
+               &nbsp;
+               <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/twitter.png" />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </td>
+        </tr>
+   </table>
+       
+    </form>
+</body>
+</html>
